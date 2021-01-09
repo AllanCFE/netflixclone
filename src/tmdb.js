@@ -58,5 +58,24 @@ export default {
                 items: await basic_fetch(`/discover/movie?with_genres=18&api_key=${TMDB}`)
             }
         ];
+    },
+    getMovieInfo: async (movieId, type) => {
+        let info = {};
+
+        if(movieId){
+            switch(type){
+                case 'movie':
+                    info = await basic_fetch(`/movie/${movieId}?api_key=${TMDB}`);
+                break;
+                case 'tv':
+                    info = await basic_fetch(`/tv/${movieId}?api_key=${TMDB}`);
+                break;
+                default:
+                    console.log("Type not allowed");
+                break;
+            }
+        }
+
+        return info;
     }
 }
