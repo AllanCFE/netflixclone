@@ -45,7 +45,7 @@ export default {
             {
                 slug: 'horror',
                 title: 'Horror',
-                items: await basic_fetch(`/discover/movie?with_genres=2&api_key=${TMDB}`)
+                items: await basic_fetch(`/discover/movie?with_genres=27&api_key=${TMDB}`)
             },
             {
                 slug: 'documentary',
