@@ -1,5 +1,5 @@
 import api_keys from './private/api_key.json';
-const api_base = 'https://api.themoviedb.org/3/';
+const api_base = 'https://api.themoviedb.org/3';
 const TMDB = api_keys.tmdb;
 
 /*
