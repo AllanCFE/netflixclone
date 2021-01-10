@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react';
 import tmdb from './tmdb'
 import MovieRow from './components/MovieRow'
 import Spotlight from './components/Spotlight'
+import Header from './components/Header'
 import './App.css'
 
 export default () => {
 
   const [movieList, setMovieList] = useState([]);
   const [spotlightData, setSpotlight] = useState(null);
+  const [blackHeader, setBlackHeader] = useState(false);
 
   useEffect(() => {
     const loadAll = async () => {
@@ -24,8 +26,24 @@ export default () => {
     loadAll();
   }, []);
 
+  useEffect(()=>{
+    const scrollListener = () => {
+      if(window.scrollY > 15){
+        setBlackHeader(true);
+      } else setBlackHeader(false);
+    }
+
+    window.addEventListener('scroll', scrollListener);
+
+    return () => {
+      window.removeEventListener('scroll', scrollListener);
+    }
+  },[]);
+
   return (
     <div className="page">
+
+      <Header black={blackHeader}/>
 
       {spotlightData && <Spotlight item={spotlightData} /> }
 
