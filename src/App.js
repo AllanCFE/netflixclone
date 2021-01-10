@@ -56,6 +56,12 @@ export default () => {
       <footer>
         Made by <strong>Allan Echeverria</strong>
       </footer>
+
+      {movieList.length <= 0 &&    
+      <div className="loading">
+        <img src={process.env.PUBLIC_URL + '/load.gif'} alt="loading" />
+      </div>
+      }
     </div>
   );
 };

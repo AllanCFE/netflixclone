@@ -37,7 +37,6 @@
     position: absolute;
     width: 40px;
     height: 225px;
-    background-color: rgba(0,0,0,0.6);
     z-index: 99;
     display: flex;
     align-items: center;
@@ -50,10 +49,12 @@
 
 .movieRow--left {
     left: 0;
+    background: linear-gradient(to right, #111 20%, transparent 80%);
 }
 
 .movieRow--right {
     right: 0;
+    background: linear-gradient(to left, #111 20%, transparent 80%);
 }
 
 .movieRow:hover .movieRow--left,
