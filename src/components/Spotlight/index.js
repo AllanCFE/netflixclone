@@ -31,8 +31,8 @@ export default ({ item }) => {
                     </div>
                 <div className="spotlight--description">{description}</div>
                 <div className="spotlight--buttons">
-                    <a href={`/watch/${item.id}`} className="spotlight--watchbtn"> Assistir</a>
-                    <a href={`/list/add/${item.id}`} className="spotlight--mylistbtn">+Minha Lista</a>
+                    <a href={`/watch/${item.id}`} className="spotlight--watchbtn">➤ Watch</a>
+                    <a href={`/list/add/${item.id}`} className="spotlight--mylistbtn">+My List</a>
                 </div>
                 <div className="spotlight--genres">
                     <strong>Genres: </strong> {genres.join(', ')}

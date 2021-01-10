@@ -1,70 +1,32 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It is a copy of the main page of Netflix, make with the purpose of study and get a better understading of React JS and responsivity.
 
-## Available Scripts
+## Sections
+The development of this website can be divided in three main parts: The header, the spotlight and the lists.
 
-In the project directory, you can run:
+### Header
+In the header I am using a replacement logo so Vercel does not get in any trouble by hosting my page. The main feature of this part of the page is that when the user gets down on the page, the background goes from transparent to gray.
 
-### `yarn start`
+![Transparent background](https://i.imgur.com/9xtfQKW.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Solid background](https://i.imgur.com/0TlHhnG.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Spotlight
+The spotlight select, in a random way, one of the Netflix shows and displays it in the very beginning of the page, along with its average critics rate, year of the launch, number of seasons, a brief description and the genres of the show.
 
-### `yarn test`
+For stylish purposes, buttons of "Watch" and "+My List" are disposed, but have no function.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Spotlight](https://i.imgur.com/ptdDNHf.png)
 
-### `yarn build`
+### Lists
+In the main part of the page it is showed some lists, all of those got on [The Movie DataBase's API](https://developers.themoviedb.org/3). The lists selected to be on the page are: Netflix Originals (not getting the proper content at the moment), For you (based on the most viewed at the current week), top rated and the genres of Action, Horror, Documentary and Drama.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Each of the lists have a carousel setted, and, when the mouse get on the list, the navigations arrows appears. In the mobile version, the navigation arrows are always on to facilitate the browsing.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Lists](https://i.imgur.com/j5YwthL.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Other Features
+One of the other features that are worth to mention is the loading screen. While the user are waiting for the response of the data, a loading page is showned, to guarantee to the user that the data is being retrieved.
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Load Screen](https://i.imgur.com/dsFdss3.png)
