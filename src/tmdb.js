@@ -24,7 +24,7 @@ export default {
             {
                 slug: 'originals',
                 title: 'Netflix Originals',
-                items: await basic_fetch(`/discover/tv/?with_network=213&api_key=${TMDB}`)
+                items: await basic_fetch(`/discover/tv?with_network=213&api_key=${TMDB}`)
             },
             {
                 slug: 'trending',
