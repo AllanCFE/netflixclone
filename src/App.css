@@ -9,8 +9,18 @@ body{
   color: #FFF;
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
 .lists {
   margin-top: -170px;
+}
+
+footer{
+  left:0;
+  right:0;
+  bottom:0;
+  background-color: #000000;
+  padding: 10px 0;
+  text-align: center;
 }

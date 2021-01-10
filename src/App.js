@@ -52,6 +52,10 @@ export default () => {
           <MovieRow key={key} title={item.title} items={item.items}/>
         ) )}
       </section>
+
+      <footer>
+        Made by <strong>Allan Echeverria</strong>
+      </footer>
     </div>
   );
 };
