@@ -84,3 +84,26 @@
     font-size: 18px;
     color: #999;
 }
+
+@media (max-width: 760px) {
+    .spotlight{
+        height: 90vh;
+    }
+    .spotlight--name{
+        font-size: 40px;
+    }
+    .spotlight--info{
+        font-size: 16px;
+    }
+    .spotlight--description{
+        font-size: 14px;
+        max-width: 100%;
+        margin-right: 30px;
+    }
+    .spotlight--watchbtn, .spotlight--mylistbtn {
+        font-size: 16px;
+    }
+    .spotlight--genres {
+        font-size: 14px;
+    }
+}
