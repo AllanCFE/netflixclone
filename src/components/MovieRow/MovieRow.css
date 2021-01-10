@@ -66,5 +66,6 @@
     .movieRow--left,
     .movieRow--right {
         opacity: 1;
+        overflow-x: hidden;
     }
 }
