@@ -55,7 +55,7 @@ export default () => {
 
       <footer>
         Made by <strong>Allan Echeverria</strong>
-        Live version at <a href="https://https://netflixclone.allancfe.vercel.app">Vercel</a>
+        Live version at <a href="https://netflixclone.allancfe.vercel.app">Vercel</a>
       </footer>
 
       {movieList.length <= 0 &&    
