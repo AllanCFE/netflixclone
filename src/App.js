@@ -54,7 +54,7 @@ export default () => {
       </section>
 
       <footer>
-        Made by <strong>Allan Echeverria</strong>
+        Made by <strong>Allan Echeverria</strong><br />
         Live version at <a href="https://netflixclone.allancfe.vercel.app">Vercel</a>
       </footer>
 
