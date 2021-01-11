@@ -33,6 +33,9 @@
 
 .spotlight--rate, .spotlight--year, .spotlight--season {
     display: inline-block;
+}
+
+.spotlight--rate, .spotlight--year {
     margin-right: 15px;
 }
 

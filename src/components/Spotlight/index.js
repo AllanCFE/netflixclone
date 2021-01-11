@@ -15,6 +15,9 @@ export default ({ item }) => {
         description = description.substring(0,200)+'[...]';
     }
 
+    console.log(`${firstDate.getFullYear()}`)
+    console.log(`${item.number_of_seasons} season${item.number_of_seasons !== 1 ? 's' : ''}`)
+    
     return (
         <section className="spotlight" style={{ 
             backgroundSize: 'cover',
@@ -27,7 +30,7 @@ export default ({ item }) => {
                     <div className="spotlight--info">
                         <div className="spotlight--rate">{item.vote_average}</div>
                         <div className="spotlight--year">{firstDate.getFullYear()}</div>
-                        <div className="spotlight--seasons">{item.number_of_seasons} season{item.number_of_seasons !== 1 ? 's' : ''}</div>
+                        <div className="spotlight--season">{item.number_of_seasons} season{item.number_of_seasons !== 1 ? 's' : ''}</div>
                     </div>
                 <div className="spotlight--description">{description}</div>
                 <div className="spotlight--buttons">
