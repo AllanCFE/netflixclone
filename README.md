@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It is a copy of the main page of Netflix, make with the purpose of study and get a better understading of React JS and responsivity.
 
+You can view the live version at [Vercel](https://https://netflixclone.allancfe.vercel.app).
+
 ## Sections
 The development of this website can be divided in three main parts: The header, the spotlight and the lists.
 

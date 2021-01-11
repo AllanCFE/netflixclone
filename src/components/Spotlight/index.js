@@ -14,9 +14,6 @@ export default ({ item }) => {
     if(description.length > 200) {
         description = description.substring(0,200)+'[...]';
     }
-
-    console.log(`${firstDate.getFullYear()}`)
-    console.log(`${item.number_of_seasons} season${item.number_of_seasons !== 1 ? 's' : ''}`)
     
     return (
         <section className="spotlight" style={{ 
